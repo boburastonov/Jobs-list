@@ -56,6 +56,11 @@ img {
   height: auto;
 }
 
+*:focus{
+  outline: 2px dashed var(--acent-color);
+  outline-offset: 3px;
+}
+
 
 /* VISUALLY-HIDDEN */
 .visually-hidden {
@@ -84,6 +89,18 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+.site-header{
+  width: 100%;
+  min-height: 156px;
+  background-color: var(--acent-color);
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  margin-top: 0;
+  margin-bottom: 76px;
 }
 
 .jobs-item {
@@ -184,6 +201,20 @@ img {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: -0.12px;
+}
+
+.additional-item{
+  position: relative;
+}
+
+.additional-item:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #B7C4C4;
+  left: 16px;
+  top: 50px;
 }
 
 .jobs-name-btn{

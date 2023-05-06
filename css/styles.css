@@ -158,7 +158,7 @@ img {
   padding: 6px 8px 4px;
   text-transform: uppercase;
   margin-right: 8px;
-  border-radius: 13px;
+  border-radius: 12px;
   cursor: pointer;
 }
 
@@ -213,8 +213,10 @@ img {
   width: 4px;
   height: 4px;
   background-color: #B7C4C4;
-  left: 16px;
-  top: 50px;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
 }
 
 .jobs-name-btn{

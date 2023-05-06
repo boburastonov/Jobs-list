@@ -43,7 +43,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Spartan", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: -0.1px;
@@ -97,6 +97,10 @@ img {
   margin-bottom: 24px;
 }
 
+.line{
+  border-left: 5px solid var(--acent-color);
+}
+
 .jobs-info {
   display: flex;
   align-items: center;
@@ -122,7 +126,7 @@ img {
 
 .jobs-info-features-title {
   font-size: 14px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: 0;
   margin: 0;
   margin-right: 16px;
@@ -152,7 +156,7 @@ img {
 .job-info-name {
   color: var(--jobs-info-color);
   font-size: 18px;
-  letter-spacing: normal;
+  letter-spacing: 1px;
   text-transform: capitalize;
   line-height: 24px;
   margin-top: 0;
@@ -182,20 +186,18 @@ img {
   letter-spacing: -0.12px;
 }
 
-.jobs-info-time {
-}
-
-.jobs-info-location {
-}
-
-.jobs-name {}
-
 .jobs-name-btn{
   padding: 4px 8px;
     background-color: #EFF6F6;
     color: var(--acent-color);
     text-decoration: none;
     border-radius: 5px;
+    transition: all .2s ease;
+  }
+
+  .jobs-name-btn:hover{
+    color: #fff;
+    background-color: var(--acent-color);
   }
   
   .jobs-name-btn:not(:last-child){
